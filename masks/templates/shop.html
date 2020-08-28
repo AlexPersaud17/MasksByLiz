@@ -4,13 +4,14 @@
   <h1>Shop</h1>
   <div class="container">
     <div class="row">
+      {% for product in object_list %}
         <div class="col-sm-3">
             <div class="card mask1" style="width: 18rem;">
-                <img class="card-img-top" src="https://www1.assets-gap.com/webcontent/0019/124/038/cn19124038.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ product.mainimage.url }}" alt="{{ product.name }}">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <form action={% url 'cart-add' %} method="POST">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.detail_text }}</p>
+                    <form action=# method="POST">
                         {%csrf_token%}
                         <input name="product_name" type="hidden" value="mask1" /> 
                         <button class="add-button btn btn-primary" type="submit">dont click this or itll break</button>
@@ -18,6 +19,7 @@
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 
