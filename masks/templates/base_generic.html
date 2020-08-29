@@ -7,24 +7,63 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-  <div class="container-fluid">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href={% url 'index' %}>Masks</a>
+  <div>
+
+
+      <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand" href={% url 'index' %}>Masks</a>
+            </div>
+            
+            <div id="subListDiv" class="main_list rh">
+              <ul class="navlinks">
+                  <li><a href={% url 'shop' %}>Cart</a></li>
+                  <li><a href={% url 'shop' %}>IG</a></li>
+              </ul>
           </div>
-          <ul class="nav navbar-nav">
-            <li><a href={% url 'shop' %}>Shop</a></li>
-          </ul>
+          <div id="mainListDiv" class="main_list lh">
+            <ul class="navlinks">
+                <li><a href={% url 'shop' %}>Shop</a></li>
+                <li><a href={% url 'shop' %}>About</a></li>
+            </ul>
         </div>
-      </nav>
-      <div class="col-sm-10 ">{% block content %}{% endblock %}</div>
-  </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+      
+    </div>
+      <div id="content" class="col-lg-12">{% block content %}{% endblock %}</div>
+
+      
+
 </body>
 <script src="{% static 'script.js' %}"></script>  
+<script>
+  $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          console.log("OK");
+      } else {
+          $('.nav').removeClass('affix');
+      }
+  });
+</script>
 </html>
