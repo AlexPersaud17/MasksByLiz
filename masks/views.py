@@ -18,6 +18,15 @@ class Home(View):
     def get(self, request):
         return render(request, self.template_name)
 
+class About(View):
+    template_name = 'about.html'
+    def get(self, request):
+        return render(request, self.template_name)
+
+class Cartt(View):
+    template_name = 'cart.html'
+    def get(self, request):
+        return render(request, self.template_name)
 
 
 def add_to_cart(request, slug):
