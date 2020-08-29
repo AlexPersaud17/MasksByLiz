@@ -1,22 +1,20 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-  <h1>Shop</h1>
-  <div class="container">
+<h1>Shop</h1>
+<div class="container">
     <div class="row">
-      {% for product in object_list %}
+        {% for product in object_list %}
         <div class="col-sm-3">
             <div class="card mask1" style="width: 18rem;">
-                <img class="card-img-top" src="{{ product.mainimage.url }}" alt="{{ product.name }}">
+                <a href={% url 'mask-detail' product.id %}>
+                    <img class="card-img-top" src="{{ product.mainimage.url }}" alt="{{ product.name }}">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">{{ product.name }}</h5>
                     <p class="card-text">{{ product.detail_text }}</p>
-                    <form action=# method="POST">
-                        {%csrf_token%}
-                        <input name="product_name" type="hidden" value="mask1" /> 
-                        <button class="add-button btn btn-primary" type="submit">dont click this or itll break</button>
-                    </form>
                 </div>
+
             </div>
         </div>
         {% endfor %}

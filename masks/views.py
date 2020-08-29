@@ -28,6 +28,12 @@ class Cartt(View):
     def get(self, request):
         return render(request, self.template_name)
 
+class MaskDetail(View):
+    template_name = 'mask-detail.html'
+    def get(self, request, pk):
+        mask = Product.objects.get(pk=pk)
+        return render(request, self.template_name, {"mask": mask})
+
 
 def add_to_cart(request, slug):
     item = get_object_or_404(Product, slug=slug)
