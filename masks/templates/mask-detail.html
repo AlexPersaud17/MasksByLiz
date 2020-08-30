@@ -1,11 +1,6 @@
-{% extends "base_generic.html" %}
-{% load static %}
-
-{% block content %}
+{% extends "base_generic.html" %} {% load static %} {% block content %}
 
 
 <img src="{{ mask.mainimage.url }}" alt="">
-
-
-
-{% endblock %}
+<a href={% url 'add-cart' mask.slug %} class="btn btn-success">Add to Cart</a>
+<a href={% url 'remove-cart' mask.slug %} class="btn btn-danger">Remove from Cart</a> {% endblock %}

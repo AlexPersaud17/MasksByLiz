@@ -18,6 +18,10 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
 </head>
@@ -26,51 +30,51 @@
 </head>
 
 <body>
-    <div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href={% url 'index' %}>Peaches & Lemon</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href={% url 'index' %}>Peaches & Lemon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href={% url 'shop' %}>Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={% url 'about' %}>About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href={% url 'cart' %}>Cart</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'shop' %}>Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'about' %}>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href={% url 'cart' %}>Cart</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
 
-    </div>
     <div id="content" class="col-lg-12 pageContentWrapper">{% block content %}{% endblock %}</div>
 
 
 
 
 
-    <footer class="footer">
-        <div class="footer-left col-md-4 col-sm-6">
+    <footer class="footer footwrap">
+        <div class="footer-left col-md-5 col-sm-6">
             <p class="about">
-                <span> a word from elizabeth</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu
-                lectus tincidunt, ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+                <h3><span> a word from elizabeth</span> </h3>
+                Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo. Suspendisse
+                tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
             </p>
 
         </div>
-        <div class="footer-center col-md-4 col-sm-6">
-
+        <div class="footer-center col-md-3 col-sm-6">
+            <h2> peaches and lemon</h2>
+            <h3><span> logo</span></h3>
         </div>
         <div class="footer-right col-md-4 col-sm-6">
-            <h2> peaches and lemon<span> logo</span></h2>
+
 
             <div class="icons">
                 <a href="#"><i class="fa fa-facebook"></i></a>
