@@ -1,8 +1,3 @@
-.carousel {
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
 .center {
     position: absolute;
     top: 50%;
@@ -29,8 +24,8 @@
     .footer-desktop {
         display: none;
     }
-    .carousel {
-        display: none;
+    .carousel-inner {
+        height: auto;
     }
 }
 
@@ -399,7 +394,6 @@ p {
 .cta {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: rgba(241, 133, 216, 0.7);
 }
 
 .cta .cta-inner {
@@ -442,6 +436,7 @@ p {
         position: relative;
         z-index: 0;
         max-width: 60vw;
+        width: 900px;
     }
     .product-item .product-item-description {
         position: relative;

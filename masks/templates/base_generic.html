@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 
 <head>
     {% block title %}
@@ -20,12 +21,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" />
+
+
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
 </head>
-{% load static %}
+
 <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
@@ -45,9 +49,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href={% url 'about' %}>About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href={% url 'cart' %}>Cart</a>
-                </li>
+
             </ul>
         </div>
     </nav>
@@ -71,7 +73,7 @@
         </div>
         <div class="footer-center col-md-3 col-sm-6">
             <h2> peaches and lemon</h2>
-            <h3><span> logo</span></h3>
+            <img src="{% static 'images/logo_png.png' %}" alt="">
         </div>
         <div class="footer-right col-md-4 col-sm-6">
 
@@ -97,7 +99,7 @@
 
 
 </body>
-<script src="{% static 'script.js' %}"></script>
+<script type="text/javascript" src="{% static 'script.js' %}"></script>
 <script>
 </script>
 
