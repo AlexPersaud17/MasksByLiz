@@ -37,7 +37,6 @@ class MaskDetail(View):
 
 def add_to_cart(request, slug):
     item = get_object_or_404(Product, slug=slug)
-    breakpoint()
     order_item, created = Cart.objects.get_or_create(
         item=item,
         user=request.user
