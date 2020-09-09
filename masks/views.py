@@ -1,14 +1,16 @@
 from django.shortcuts import render
 from django.views.generic import View
 from django.views import generic
-from django.urls import reverse_lazy
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView
-from .models import Product, Cart, Order
-from django.contrib import messages
-from django.contrib.auth import get_user_model
+from django.core.exceptions import ObjectDoesNotExist
+from .models import Product, Cart, Order, AdminMgmt
 
-User = get_user_model()
+
+try:
+    ADMIN_DETAILS = AdminMgmt.objects.filter()[:1].get()
+except ObjectDoesNotExist:
+    ADMIN_DETAILS = ''
 
 
 class Shop(ListView):

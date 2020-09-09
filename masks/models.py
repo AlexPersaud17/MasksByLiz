@@ -5,6 +5,17 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
+class AdminMgmt(models.Model):
+    background = models.ImageField()
+    homeImage = models.ImageField()
+    carouselImage1 = models.ImageField()
+    carouselImage2 = models.ImageField()
+    carouselImage3 = models.ImageField()
+    aboutMainImage = models.ImageField()
+    aboutImage1 = models.ImageField()
+    aboutImage2 = models.ImageField()
+    aboutImage3 = models.ImageField()
+
 class Product(models.Model):
     mainimage = models.ImageField()
     name = models.CharField(max_length=300)
