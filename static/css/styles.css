@@ -160,6 +160,16 @@ header {
 }
 
 @media (max-width: 991px) {
+    #landing {
+        background-size: 500px;
+        height: 200px;
+    }
+    #landingText {
+        left: 50%;
+    }
+    #landingOverlay {
+        width: 100%;
+    }
     .navbar-brand {
         float: none;
     }
