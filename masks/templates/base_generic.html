@@ -32,22 +32,24 @@
 <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
-<body style="background-image: url('/media/{{admin.background}}');">
+<body>
 
     <header>
 
 
 
         <div class="header-container">
-            <a href={% url 'index' %}><img id="logo-main" src="{% static 'images/logo_png.png' %}"></a>
 
             <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+
                 <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href={% url 'index' %}><img id="logo-main" src="{% static 'images/logo_png.png' %}"></a>
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav mx-auto">
+                        <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href={% url 'shop' %}>Shop</a>
                             </li>

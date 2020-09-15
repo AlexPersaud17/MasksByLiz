@@ -1,6 +1,6 @@
 {% extends "base_generic.html" %} {% block content %}
 <h1>Shop</h1>
-<div id='collection-component-1600125456618'></div>
+<div id='collection-component-1600127385518'></div>
 <script type="text/javascript">
     /*<![CDATA[*/
     (function() {
@@ -31,7 +31,7 @@
             ShopifyBuy.UI.onReady(client).then(function(ui) {
                 ui.createComponent('collection', {
                     id: '215683858588',
-                    node: document.getElementById('collection-component-1600125456618'),
+                    node: document.getElementById('collection-component-1600127385518'),
                     moneyFormat: '%24%7B%7Bamount%7D%7D',
                     options: {
                         "product": {
@@ -55,15 +55,44 @@
                                         "position": "relative",
                                         "height": "0"
                                     }
+                                },
+                                "title": {
+                                    "font-family": "Roboto, sans-serif",
+                                    "font-size": "17px"
+                                },
+                                "button": {
+                                    "font-family": "Roboto, sans-serif",
+                                    "font-weight": "bold",
+                                    ":hover": {
+                                        "background-color": "#dcad9e"
+                                    },
+                                    "background-color": "#f4c0af",
+                                    ":focus": {
+                                        "background-color": "#dcad9e"
+                                    },
+                                    "border-radius": "40px",
+                                    "padding-left": "30px",
+                                    "padding-right": "30px"
+                                },
+                                "price": {
+                                    "font-size": "15px",
+                                    "color": "#7b7b7b"
+                                },
+                                "compareAt": {
+                                    "font-size": "12.75px",
+                                    "color": "#7b7b7b"
+                                },
+                                "unitPrice": {
+                                    "font-size": "12.75px",
+                                    "color": "#7b7b7b"
                                 }
                             },
-                            "buttonDestination": "modal",
-                            "contents": {
-                                "options": false
-                            },
                             "text": {
-                                "button": "View product"
-                            }
+                                "button": "Add to cart"
+                            },
+                            "googleFonts": [
+                                "Roboto"
+                            ]
                         },
                         "productSet": {
                             "styles": {
@@ -88,17 +117,70 @@
                                         "margin-left": "0px",
                                         "margin-bottom": "0px"
                                     }
+                                },
+                                "button": {
+                                    "font-family": "Roboto, sans-serif",
+                                    "font-weight": "bold",
+                                    ":hover": {
+                                        "background-color": "#dcad9e"
+                                    },
+                                    "background-color": "#f4c0af",
+                                    ":focus": {
+                                        "background-color": "#dcad9e"
+                                    },
+                                    "border-radius": "40px",
+                                    "padding-left": "30px",
+                                    "padding-right": "30px"
                                 }
                             },
+                            "googleFonts": [
+                                "Roboto"
+                            ],
                             "text": {
                                 "button": "Add to cart"
                             }
                         },
                         "cart": {
+                            "styles": {
+                                "button": {
+                                    "font-family": "Roboto, sans-serif",
+                                    "font-weight": "bold",
+                                    ":hover": {
+                                        "background-color": "#dcad9e"
+                                    },
+                                    "background-color": "#f4c0af",
+                                    ":focus": {
+                                        "background-color": "#dcad9e"
+                                    },
+                                    "border-radius": "40px"
+                                }
+                            },
                             "text": {
-                                "total": "Subtotal",
+                                "total": "Total",
+                                "notice": "Shipping is included in price",
                                 "button": "Checkout"
-                            }
+                            },
+                            "googleFonts": [
+                                "Roboto"
+                            ]
+                        },
+                        "toggle": {
+                            "styles": {
+                                "toggle": {
+                                    "font-family": "Roboto, sans-serif",
+                                    "font-weight": "bold",
+                                    "background-color": "#f4c0af",
+                                    ":hover": {
+                                        "background-color": "#dcad9e"
+                                    },
+                                    ":focus": {
+                                        "background-color": "#dcad9e"
+                                    }
+                                }
+                            },
+                            "googleFonts": [
+                                "Roboto"
+                            ]
                         }
                     },
                 });
@@ -107,4 +189,5 @@
     })();
     /*]]>*/
 </script>
+
 {% endblock %}
