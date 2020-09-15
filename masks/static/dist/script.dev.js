@@ -9,3 +9,8 @@ $('.navTrigger').click(function () {
 $('.carousel').carousel({
   interval: 2000
 });
+
+if ($(window).width() < 900) {
+  $('#aboutSection').removeClass('ml-auto');
+  $('#aboutSection').removeClass('mr-auto');
+}

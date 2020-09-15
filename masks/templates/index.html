@@ -1,9 +1,16 @@
 {% extends "base_generic.html" %} {% load static %} {% block content %}
-<div id="landing" style="background-image: url('/media/{{admin.homeImage}}');">
-    <div>
-        <button class="add-button btn" id="shop-now"><a href={% url 'shop' %}>Shop Now</a></button>
+
+<a href={% url 'shop' %}>
+
+    <div id="landing">
+        <div id="landingOverlay">
+            <div id="landingText">Shop Now</div>
+        </div>
     </div>
-</div>
+</a>
+
+
+
 
 
 <div id="carouselExampleIndicators" class="carousel slide col-lg-8 peopleCarouselImg" data-ride="carousel">
