@@ -33,81 +33,81 @@
 </head>
 
 <body>
+    <div class="body-wrapper">
+        <header>
 
-    <header>
 
 
+            <div class="header-container">
 
-        <div class="header-container">
+                <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
 
-            <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+                    <div class="container">
+                        <a href={% url 'index' %}><img id="logo-main" src="{% static 'images/logo_png.png' %}"></a>
 
-                <div class="container">
-                    <a href={% url 'index' %}><img id="logo-main" src="{% static 'images/logo_png.png' %}"></a>
-
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href={% url 'shop' %}>Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href={% url 'about' %}>About</a>
-                            </li>
-                        </ul>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href={% url 'shop' %}>Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href={% url 'about' %}>About</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-
-
-
-    </header>
-
-
-    <div id="content" class="col-lg-12 pageContentWrapper">{% block content %}{% endblock %}</div>
-
-
-
-
-
-    <footer class="footer footwrap">
-        <div class="footer-left col-md-5 col-sm-6">
-            <p class="about">
-                <h3><span> a word from elizabeth</span> </h3>
-                Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo. Suspendisse
-                tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
-            </p>
-
-        </div>
-        <div class="footer-center col-md-3 col-sm-6">
-            <a href={% url 'index' %}><img src="{% static 'images/logo_png.png' %}" alt="" class="footer-logo"></a>
-
-        </div>
-        <div class="footer-right col-md-4 col-sm-6">
-
-
-            <div class="icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                </nav>
             </div>
-            <p class="name"> Source code: <a href="https://github.com/AlexPersaud17/MasksByLiz">GitHub <i class="fab fa-github"></i></a>
-            </p>
-            <p class="name">
-                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+
+
+
+        </header>
+
+
+        <div id="content" class="col-lg-12 pageContentWrapper">{% block content %}{% endblock %}</div>
+
+
+
+
+
+        <footer class="footer footwrap">
+            <div class="footer-left col-md-5 col-sm-6">
+                <p class="about">
+                    <h3><span> a word from elizabeth</span> </h3>
+                    Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo. Suspendisse
+                    tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+                </p>
+
+            </div>
+            <div class="footer-center col-md-3 col-sm-6">
+                <a href={% url 'index' %}><img src="{% static 'images/logo_png.png' %}" alt="" class="footer-logo"></a>
+
+            </div>
+            <div class="footer-right col-md-4 col-sm-6">
+
+
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <p class="name"> Source code: <a href="https://github.com/AlexPersaud17/MasksByLiz">GitHub <i class="fab fa-github"></i></a>
+                </p>
+                <p class="name">
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
           Attribution 4.0 International License</a>.
-            </p>
+                </p>
 
-        </div>
-    </footer>
-
-
+            </div>
+        </footer>
 
 
+
+    </div>
 
 </body>
 <script type="text/javascript" src="{% static 'script.js' %}"></script>
