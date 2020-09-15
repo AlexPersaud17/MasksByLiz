@@ -280,20 +280,22 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    /* background-image: url("https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
-    background-color: #F6F0E8;
-    font-family: 'futura' !important;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    border: 1px solid transparent;
-    height: 100%;
-    z-index: -100;
-    width: 90%;
-    margin: 0 auto;
-    padding-left: 150px;
-    padding-right: 150px;
+@media (min-width: 991px) {
+    body {
+        /* background-image: url("https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+        background-color: #F6F0E8;
+        font-family: 'futura' !important;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid transparent;
+        height: 100%;
+        z-index: -100;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 }
 
 p {
