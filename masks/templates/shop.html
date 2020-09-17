@@ -1,6 +1,16 @@
 {% extends "base_generic.html" %} {% block content %}
+
+
+
+<div id="landing">
+    <div id="landingOverlay">
+        <div id="landingText">Masks</div>
+    </div>
+</div>
+
+
 <h1 class='shop-heading'>MASKS</h1>
-<div id='collection-component-1600127385518'></div>
+<div id='collection-component-1600308427407'></div>
 <script type="text/javascript">
     /*<![CDATA[*/
     (function() {
@@ -31,7 +41,7 @@
             ShopifyBuy.UI.onReady(client).then(function(ui) {
                 ui.createComponent('collection', {
                     id: '215683858588',
-                    node: document.getElementById('collection-component-1600127385518'),
+                    node: document.getElementById('collection-component-1600308427407'),
                     moneyFormat: '%24%7B%7Bamount%7D%7D',
                     options: {
                         "product": {
@@ -153,12 +163,58 @@
                                         "background-color": "#dcad9e"
                                     },
                                     "border-radius": "40px"
+                                },
+                                "title": {
+                                    "color": "#464545"
+                                },
+                                "header": {
+                                    "color": "#464545"
+                                },
+                                "lineItems": {
+                                    "color": "#464545"
+                                },
+                                "subtotalText": {
+                                    "color": "#464545"
+                                },
+                                "subtotal": {
+                                    "color": "#464545"
+                                },
+                                "notice": {
+                                    "color": "#464545"
+                                },
+                                "currency": {
+                                    "color": "#464545"
+                                },
+                                "close": {
+                                    "color": "#464545",
+                                    ":hover": {
+                                        "color": "#464545"
+                                    }
+                                },
+                                "empty": {
+                                    "color": "#464545"
+                                },
+                                "noteDescription": {
+                                    "color": "#464545"
+                                },
+                                "discountText": {
+                                    "color": "#464545"
+                                },
+                                "discountIcon": {
+                                    "fill": "#464545"
+                                },
+                                "discountAmount": {
+                                    "color": "#464545"
                                 }
                             },
                             "text": {
                                 "total": "Total",
                                 "notice": "Free Shipping",
-                                "button": "Checkout"
+                                "button": "Checkout",
+                                "noteDescription": "NOTE: Please include your shipping address below only if your billing address is NOT the same - to avoid extra shipping charges :)"
+                            },
+                            "contents": {
+                                "note": true
                             },
                             "googleFonts": [
                                 "Roboto"
@@ -181,6 +237,43 @@
                             "googleFonts": [
                                 "Roboto"
                             ]
+                        },
+                        "lineItem": {
+                            "styles": {
+                                "variantTitle": {
+                                    "color": "#464545"
+                                },
+                                "title": {
+                                    "color": "#464545"
+                                },
+                                "price": {
+                                    "color": "#464545"
+                                },
+                                "fullPrice": {
+                                    "color": "#464545"
+                                },
+                                "discount": {
+                                    "color": "#464545"
+                                },
+                                "discountIcon": {
+                                    "fill": "#464545"
+                                },
+                                "quantity": {
+                                    "color": "#464545"
+                                },
+                                "quantityIncrement": {
+                                    "color": "#464545",
+                                    "border-color": "#464545"
+                                },
+                                "quantityDecrement": {
+                                    "color": "#464545",
+                                    "border-color": "#464545"
+                                },
+                                "quantityInput": {
+                                    "color": "#464545",
+                                    "border-color": "#464545"
+                                }
+                            }
                         }
                     },
                 });
@@ -189,5 +282,6 @@
     })();
     /*]]>*/
 </script>
+
 
 {% endblock %}
