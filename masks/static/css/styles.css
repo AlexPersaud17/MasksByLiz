@@ -236,9 +236,8 @@ footer {
 }
 
 @font-face {
-    font-family: 'simplificasimplifica';
-    src: url('/static/fonts/simplifica_typeface-webfont.woff2') format('woff2'), url('/static/fonts/simplifica_typeface-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'futura';
+    src: url('/static/fonts/Futura Book font.tff') format('tff') font-weight: normal;
     font-style: normal;
 }
 
