@@ -121,11 +121,24 @@
     margin-bottom: 50px;
 }
 
+#landing3 {
+    background-image: url('/static/images/door.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 430px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
 #landing:hover #landingOverlay {
     width: 100%;
 }
 
 #landing2:hover #landingOverlay2 {
+    width: 100%;
+}
+
+#landing3:hover #landingOverlay3 {
     width: 100%;
 }
 
@@ -153,6 +166,19 @@
     height: 100%;
     transition: .5s ease;
     opacity: 0.5;
+}
+
+#landingOverlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f4c0af;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
 }
 
 #landingText {
@@ -190,9 +216,11 @@ header {
 }
 
 .footer-left {
-    max-width: 41.666667%;
-    padding-left: 100px;
-    padding-bottom: 50px;
+    /* max-width: 41.666667%; */
+    margin-left: -15px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    padding-top: 0px !important;
 }
 
 
@@ -220,7 +248,7 @@ footer {
     background: white;
     display: inline-block;
     padding-right: 450px;
-    padding-left: 400px;
+    padding-left: 350px;
     padding-top: 40px;
     padding-bottom: 30px;
     margin-left: -250px;
@@ -369,9 +397,16 @@ p {
 }
 
 @media (min-width: 1026px) {
-    .fc-logo {
+    /* .fc-logo {
         display: none;
+    } */
+    li {
+        color: #A0A09F;
     }
+    ul.name {
+        padding-top: 50px;
+    }
+    .footer {}
     .about-heading .about-heading-img {
         position: relative;
         z-index: 0;
@@ -437,8 +472,12 @@ p {
 }
 
 @media only screen and (min-device-width: 767px) and (max-device-width: 1025px) {
-    .fc-logo {
+    /* .fc-logo {
         display: none;
+    } */
+    li {
+        color: #A0A09F;
+        list-style-type: none;
     }
     .col-md-4 {
         -ms-flex: 0 0 33.333333%;
@@ -493,9 +532,12 @@ p {
     #landingOverlay2 {
         width: 100%;
     }
-    .footer-left {
-        display: none;
+    #landingOverlay3 {
+        width: 100%;
     }
+    /* .footer-left {
+        display: none;
+    } */
     .footer-logo {
         height: 100px;
     }
@@ -525,16 +567,20 @@ p {
 }
 
 @media (max-width: 766px) {
-    .fl-logo {
-        display: none;
+    li {
+        color: #A0A09F;
+        list-style-type: none;
     }
+    /* .fl-logo {
+        display: none;
+    } */
     #logo-main {
         width: 75px;
         padding-left: 10px;
     }
-    .footer-left {
+    /* .footer-left {
         display: none;
-    }
+    } */
     .footer-logo {
         height: 100px;
     }
@@ -569,6 +615,9 @@ p {
         width: 100%;
     }
     #landingOverlay2 {
+        width: 100%;
+    }
+    #landingOverlay3 {
         width: 100%;
     }
     .section-heading .section-heading-upper {
