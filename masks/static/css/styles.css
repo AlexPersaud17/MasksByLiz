@@ -522,6 +522,9 @@ p {
     #landing2 {
         height: 300px;
     }
+    #landing3 {
+        height: 300px;
+    }
     #landingText {
         left: 30%;
         font-size: 40px;
@@ -602,6 +605,12 @@ p {
         margin-top: -5rem;
     }
     #landing {
+        height: 150px;
+    }
+    #landing2 {
+        height: 150px;
+    }
+    #landing3 {
         height: 150px;
     }
     #landing2 {
