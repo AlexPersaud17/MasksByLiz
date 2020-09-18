@@ -93,8 +93,11 @@
 }
 
 #content {
-    margin-top: 40px;
     height: auto;
+}
+
+.pitch-text {
+    display: none !important;
 }
 
 .shop-heading {
@@ -216,17 +219,55 @@ header {
 }
 
 .footer-left {
-    /* max-width: 41.666667%; */
     margin-left: -15px;
     padding-left: 0px;
     padding-bottom: 10px;
     padding-top: 0px !important;
 }
 
+.contact-form {
+    padding: 50px;
+    margin: 30px 0;
+}
 
-/* .thank-you-section {
-    max-width: 800px;
-} */
+.contact-form h1 {
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.contact-form .form-control,
+.contact-form .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+
+.contact-form .btn-primary {
+    min-width: 150px;
+    background: #f4c0af;
+    border: none;
+}
+
+.contact-form .btn-primary:hover {
+    background: #eba088;
+}
+
+.contact-form label {
+    opacity: 0.9;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.hint-text {
+    font-size: 15px;
+    padding-bottom: 15px;
+    opacity: 0.8;
+}
+
+.bs-example {
+    margin: 20px;
+}
 
 .navbar .container {
     margin-left: 0px;
@@ -238,10 +279,6 @@ header {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: start !important;
-}
-
-.pageContentWrapper {
-    /* min-height: calc(100vh - 80px); */
 }
 
 footer {
@@ -261,12 +298,6 @@ footer {
 .footer-right {
     padding-top: 30px;
     font-size: 16px;
-}
-
-@font-face {
-    font-family: 'futura';
-    src: url('/static/fonts/Futura Book font.tff') format('tff') font-weight: normal;
-    font-style: normal;
 }
 
 html {
@@ -397,16 +428,12 @@ p {
 }
 
 @media (min-width: 1026px) {
-    /* .fc-logo {
-        display: none;
-    } */
     li {
         color: #A0A09F;
     }
     ul.name {
         padding-top: 50px;
     }
-    .footer {}
     .about-heading .about-heading-img {
         position: relative;
         z-index: 0;

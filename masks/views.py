@@ -17,6 +17,12 @@ class Shop(ListView):
     model = Product
     template_name = 'shop.html'
 
+class Contact(ListView):
+    template_name = 'contact.html'
+    def get(self, request):
+        return render(request, self.template_name)
+
+    template_name = 'contact.html'
 
 class Home(View):
     template_name = 'index.html'
